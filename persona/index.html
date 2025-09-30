@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Persona & JTBD – ASUS PN54 (Navastore)</title>
+  <style>
+    /* ===== Brand & tokens ===== */
+    :root{
+      --brand:#003366;      /* Navastore primary */
+      --accent:#0066cc;     /* Action / focus */
+      --accent-2:#00a37a;   /* Secondary */
+      --bg:#f7f9fc;         /* Page bg */
+      --surface:#ffffff;    /* Card */
+      --ink:#101418;        /* Main text */
+      --ink-2:#475468;      /* Secondary text */
+      --line:#d8e1ee;       /* Borders */
+      --chip:#eaf3ff;       /* Pills */
+      --shadow:0 10px 24px rgba(0,0,0,.10), 0 2px 6px rgba(0,0,0,.06);
+    }
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial; color:var(--ink); background:var(--bg); line-height:1.6}
+    .wrap{max-width:1160px; margin:28px auto 64px; padding:0 20px}
+
+    /* ===== Header ===== */
+    .header{margin-bottom:16px}
+    .kicker{letter-spacing:.14em; text-transform:uppercase; color:var(--accent); font-weight:700; font-size:12px}
+    h1{margin:.3rem 0 .4rem; font-size:28px; color:var(--brand)}
+    .subtitle{margin:0; color:var(--ink-2)}
+
+    /* ===== Tabs (4 tabs) ===== */
+    .tabs{position:sticky; top:0; z-index:3; background:rgba(247,249,252,.82); backdrop-filter:blur(8px); border-bottom:1px solid var(--line)}
+    .tablist{display:flex; gap:10px; padding:10px 0; flex-wrap:wrap}
+    .tab-btn{appearance:none; border:1px solid var(--line); background:var(--surface); color:var(--brand); font-weight:700; padding:10px 14px; border-radius:12px; cursor:pointer; box-shadow:var(--shadow);}
+    .tab-btn:hover{background:#f0f6ff}
+    .tab-btn[aria-selected="true"]{outline:2px solid var(--accent); background:linear-gradient(180deg,rgba(0,102,204,.18),rgba(0,102,204,.06));}
+
+    /* ===== Panels ===== */
+    .panel{display:none; padding:18px 0}
+    .panel.active{display:block}
+
+    /* ===== Cards & layout inside panels ===== */
+    .card{background:var(--surface); border:1px solid var(--line); border-radius:18px; box-shadow:var(--shadow); padding:18px; margin-bottom:18px}
+    .two-col{display:grid; grid-template-columns:1.15fr .85fr; gap:18px}
+    @media (max-width:980px){.two-col{grid-template-columns:1fr}}
+
+    .block{background:#f9fbff; border:1px solid var(--line); border-radius:14px; padding:14px}
+    .block h3{margin:0 0 8px; font-size:16px; color:var(--brand)}
+    .list{margin:0; padding-left:18px}
+    .list li{margin:3px 0}
+
+    .jtbd{display:grid; gap:12px}
+    .jtbd .col{background:#f9fbff; border:1px solid var(--line); border-radius:14px; padding:14px}
+    .jtbd h4{margin:0 0 8px; font-size:15px; color:var(--accent-2)}
+
+    .summary{display:grid; gap:10px}
+    .pillset{display:flex; flex-wrap:wrap; gap:8px}
+    .pill{background:var(--chip); color:var(--brand); border:1px solid #cfe3ff; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:600}
+
+    .note{margin-top:8px; color:var(--ink-2); font-size:13px}
+    .footer{margin-top:14px; color:var(--ink-2); font-size:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="kicker">Navastore • PN54</div>
+      <h1>Persona & Jobs‑To‑Be‑Done (JTBD) — ASUS PN54</h1>
+      <p class="subtitle">Chọn vào từng mục để xem thông tin chi tiết</p>
+    </header>
+
+    <!-- ===== Tablist ===== -->
+    <nav class="tabs" role="tablist" aria-label="Persona Tabs">
+      <div class="tablist">
+        <button class="tab-btn" role="tab" aria-selected="true" aria-controls="panel-overview" id="tab-overview">🔎 Tổng quan</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-p1" id="tab-p1">🧑‍💻 Persona 1 (ưu tiên số 1)</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-p2" id="tab-p2">🎨 Persona 2</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-p3" id="tab-p3">👔 Persona 3</button>
+      </div>
+    </nav>
+
+    <!-- ===== Panels ===== -->
+    <section id="panel-overview" class="panel active" role="tabpanel" aria-labelledby="tab-overview">
+      <div class="card">
+        <h2>Khung JTBD</h2>
+        <div class="block">
+          <p>Khách hàng không chỉ “mua máy tính” → họ “thuê PN54 để hoàn thành công việc / giải quyết nỗi đau”. Khung JTBD sẽ có 3 phần:</p>
+          <ul class="list">
+            <li><strong>Functional Job:</strong> Khách hàng muốn làm gì về mặt chức năng.</li>
+            <li><strong>Emotional Job:</strong> Họ cảm thấy/thể hiện thế nào khi đạt được.</li>
+            <li><strong>Social Job:</strong> Họ muốn người khác nhìn nhận mình ra sao.</li>
+          </ul>
+          <p class="note">Chọn tab bên trên để xem đầy đủ thông tin <em>16 mục</em> của từng persona & JTBD tương ứng.</p>
+        </div>
+      </div>
+
+      <div class="card summary">
+        <strong>📊 BẢNG PHÂN TÍCH TA – ASUS PN54</strong>
+        <div class="pillset">
+          <span class="pill">1. TA chính – Tech Early Adopters</span>
+          <span class="pill">2. TA phụ 1 – Content Creators / Freelancers</span>
+          <span class="pill">3. TA phụ 2 – White‑collar Premium Users</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="panel-p1" class="panel" role="tabpanel" aria-labelledby="tab-p1">
+      <div class="card">
+        <h2>🧑‍💻 Persona 1 – Tech Early Adopters (TA chính)</h2>
+        <div class="two-col">
+          <div class="block">
+            <h3>Thông tin 16 mục</h3>
+            <ol class="list">
+              <li>Tuổi: 22 – 35</li>
+              <li>Giới tính: Nam (đa số), một phần nhỏ nữ trong ngành IT</li>
+              <li>Nơi ở: Thành phố lớn (HN, HCM, Đà Nẵng)</li>
+              <li>Công việc: Developer, kỹ sư AI/ML, startup founder, gamer semi-pro</li>
+              <li>Tình trạng hôn nhân: Độc thân hoặc mới lập gia đình</li>
+              <li>Thu nhập hàng tháng: 20 – 35 triệu</li>
+              <li>Trình độ học vấn: Đại học/Cao học ngành CNTT, Kỹ thuật</li>
+              <li>Tầng lớp xã hội: Middle – upper middle class</li>
+              <li>Mối quan tâm: Công nghệ AI mới, PC hiệu năng, gaming, dev tool</li>
+              <li>Sở thích: Test phần mềm/hardware, chơi game, tham gia forum tech</li>
+              <li>Thói quen media: Theo dõi YouTube tech, TikTok review, Reddit/voz</li>
+              <li>Kênh thông tin tin cậy: KOL công nghệ, forum dev, nhóm Facebook AI</li>
+              <li>Hành vi mua hàng: Nghiên cứu kỹ specs, so sánh benchmark, mua online (Shopee/Lazada flagship, website chính hãng)</li>
+              <li>Rào cản mua hàng: Giá cao, chưa tin AI PC khác biệt so với PC gaming</li>
+              <li>Động lực mua hàng: Muốn trải nghiệm công nghệ đầu tiên, tối ưu hiệu năng AI tại chỗ</li>
+              <li>Thông điệp thuyết phục: “Mang AI workstation tiên phong về bàn làm việc – nhỏ gọn, mạnh mẽ, khác biệt.”</li>
+            </ol>
+          </div>
+          <div class="jtbd">
+            <div class="col">
+              <h4>Functional Job</h4>
+              <ul class="list">
+                <li>Chạy mô hình AI cục bộ (không phụ thuộc cloud).</li>
+                <li>Test công nghệ mới (Copilot+, Zen 5, NPU 50 TOPS).</li>
+                <li>Build mini workstation thay desktop cồng kềnh.</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Emotional Job</h4>
+              <ul class="list">
+                <li>Cảm thấy hứng thú vì được trải nghiệm công nghệ tiên phong.</li>
+                <li>An tâm vì máy ổn định, không lo treo khi thử nghiệm.</li>
+                <li>Thoả mãn nhu cầu “đi trước đón đầu” trong cộng đồng tech.</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Social Job</h4>
+              <ul class="list">
+                <li>Được nhìn nhận là “người đầu tiên” trải nghiệm công nghệ mới.</li>
+                <li>Tạo uy tín trong nhóm dev/IT khi giới thiệu tool/thiết bị mới.</li>
+                <li>Có thể chia sẻ case study hoặc hướng dẫn trên forum/social.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="panel-p2" class="panel" role="tabpanel" aria-labelledby="tab-p2">
+      <div class="card">
+        <h2>🎨 Persona 2 – Content Creators / Freelancers (TA phụ 1)</h2>
+        <div class="two-col">
+          <div class="block">
+            <h3>Thông tin 16 mục</h3>
+            <ol class="list">
+              <li>Tuổi: 25 – 40</li>
+              <li>Giới tính: Nam & Nữ (tương đối cân bằng)</li>
+              <li>Nơi ở: TP lớn (HN, HCM, Đà Nẵng), home studio hoặc coworking</li>
+              <li>Công việc: Youtuber, Streamer, Designer, Editor, kiến trúc sư</li>
+              <li>Tình trạng hôn nhân: Độc thân hoặc đã lập gia đình</li>
+              <li>Thu nhập hàng tháng: 15 – 30 triệu (theo dự án/khách hàng)</li>
+              <li>Trình độ học vấn: Đại học ngành thiết kế, truyền thông, kiến trúc…</li>
+              <li>Tầng lớp xã hội: Middle class</li>
+              <li>Mối quan tâm: Thiết bị sáng tạo, deadline, đa màn hình, backup dữ liệu</li>
+              <li>Sở thích: Làm video, stream, chỉnh sửa ảnh, chụp ảnh, đồ họa</li>
+              <li>Thói quen media: Xem review tech (ThinkView, Vinh Vật Vờ, Schannel)</li>
+              <li>Kênh thông tin tin cậy: Cộng đồng designer/creator, hội nhóm freelancer</li>
+              <li>Hành vi mua hàng: Tìm review, so sánh PC/laptop, ưu tiên máy bền – bảo hành tốt</li>
+              <li>Rào cản mua hàng: Lo ngại giá cao, chưa hiểu rõ PN54 mạnh ở đâu so với PC gaming</li>
+              <li>Động lực mua hàng: Muốn có workstation gọn gàng, yên tĩnh, tránh treo máy khi deadline</li>
+              <li>Thông điệp thuyết phục: “Mini PC AI – người bạn đồng hành sáng tạo bền bỉ cho freelancer & studio nhỏ.”</li>
+            </ol>
+          </div>
+          <div class="jtbd">
+            <div class="col">
+              <h4>Functional Job</h4>
+              <ul class="list">
+                <li>Dựng video 4K, chỉnh sửa ảnh, thiết kế CAD nhẹ mà không bị lag.</li>
+                <li>Làm việc đa màn hình trong studio nhỏ, tiết kiệm điện.</li>
+                <li>Vận hành bền bỉ, tránh downtime khi chạy deadline.</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Emotional Job</h4>
+              <ul class="list">
+                <li>Cảm thấy yên tâm khi máy hoạt động ổn định, deadline không bị ảnh hưởng.</li>
+                <li>Tự tin hơn khi sở hữu thiết bị “chuẩn doanh nghiệp” chuyên nghiệp.</li>
+                <li>Giảm stress vì không phải liên tục fix lỗi máy tính.</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Social Job</h4>
+              <ul class="list">
+                <li>Thể hiện hình ảnh freelancer/studio chuyên nghiệp với khách hàng.</li>
+                <li>Dùng PN54 như một “bằng chứng” đầu tư nghiêm túc cho công việc.</li>
+                <li>Có thể khoe setup gọn gàng, hiện đại trên social/YouTube.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="panel-p3" class="panel" role="tabpanel" aria-labelledby="tab-p3">
+      <div class="card">
+        <h2>👔 Persona 3 – White‑collar Premium Users (TA phụ 2)</h2>
+        <div class="two-col">
+          <div class="block">
+            <h3>Thông tin 16 mục</h3>
+            <ol class="list">
+              <li>Tuổi: 28 – 45</li>
+              <li>Giới tính: Nam & Nữ</li>
+              <li>Nơi ở: Hà Nội, HCM (quận trung tâm, khu dân cư cao cấp)</li>
+              <li>Công việc: Quản lý cấp trung, chuyên viên cao cấp (finance, consulting, bất động sản, ngân hàng)</li>
+              <li>Tình trạng hôn nhân: Đa số đã kết hôn</li>
+              <li>Thu nhập hàng tháng: 25 – 50 triệu</li>
+              <li>Trình độ học vấn: Đại học/Cao học ngành kinh tế, tài chính, quản trị</li>
+              <li>Tầng lớp xã hội: Upper middle – affluent</li>
+              <li>Mối quan tâm: Nâng cấp văn phòng tại nhà, công nghệ hiện đại, thương hiệu uy tín</li>
+              <li>Sở thích: Du lịch, networking, sưu tầm thiết bị cao cấp, đọc báo tài chính</li>
+              <li>Thói quen media: LinkedIn, báo công nghệ, báo tài chính, YouTube review</li>
+              <li>Kênh thông tin tin cậy: Báo chí uy tín (CafeF, VietnamFinance, VnExpress), LinkedIn, KOL công nghệ</li>
+              <li>Hành vi mua hàng: Ưa chuộng sản phẩm chính hãng, mua qua flagship store/e-commerce có trả góp</li>
+              <li>Rào cản mua hàng: Chưa quen khái niệm Mini PC thay desktop; lo lắng chi phí cao</li>
+              <li>Động lực mua hàng: Muốn văn phòng tại nhà gọn gàng, sang trọng, tiết kiệm điện, sản phẩm bền lâu</li>
+              <li>Thông điệp thuyết phục: “Một bước nâng cấp văn phòng tại nhà – gọn gàng, mạnh mẽ, tiết kiệm năng lượng.”</li>
+            </ol>
+          </div>
+          <div class="jtbd">
+            <div class="col">
+              <h4>Functional Job</h4>
+              <ul class="list">
+                <li>Thay thế desktop cồng kềnh bằng mini PC gọn nhẹ.</li>
+                <li>Làm việc từ xa (remote/hybrid) với hệ thống đa màn hình.</li>
+                <li>Giảm chi phí điện năng, đảm bảo máy chạy êm 24/7.</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Emotional Job</h4>
+              <ul class="list">
+                <li>Cảm thấy thoải mái với không gian làm việc gọn gàng, sang trọng.</li>
+                <li>Yên tâm vì thiết bị ổn định, ít rủi ro gián đoạn.</li>
+                <li>Thỏa mãn khi biết mình đầu tư sản phẩm thông minh, tiết kiệm về lâu dài.</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h4>Social Job</h4>
+              <ul class="list">
+                <li>Được nhìn nhận là người “cập nhật công nghệ mới”, dùng PC AI thay desktop truyền thống.</li>
+                <li>Thể hiện phong cách sống hiện đại, chuyên nghiệp.</li>
+                <li>Gắn liền hình ảnh cá nhân với thương hiệu ASUS (cao cấp, bền bỉ, chính hãng).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer">👉 Tóm lại, khách hàng “thuê” PN54 không chỉ để xử lý công việc (functional), mà còn để: Khẳng định bản thân (social) → tiên phong, chuyên nghiệp, đẳng cấp; Đem lại sự yên tâm và hứng thú (emotional) → không lo gián đoạn, trải nghiệm mới mẻ.</div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    // Simple accessible tabs
+    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+    const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+    function activateTab(tab){
+      tabs.forEach(t=>{t.setAttribute('aria-selected','false'); t.tabIndex = -1});
+      panels.forEach(p=>p.classList.remove('active'));
+      tab.setAttribute('aria-selected','true'); tab.tabIndex = 0; tab.focus();
+      const id = tab.getAttribute('aria-controls');
+      document.getElementById(id).classList.add('active');
+    }
+    tabs.forEach(tab=>{
+      tab.addEventListener('click',()=>activateTab(tab));
+      tab.addEventListener('keydown',e=>{
+        const i = tabs.indexOf(tab); let j = i;
+        if(e.key==='ArrowRight') j = (i+1)%tabs.length;
+        if(e.key==='ArrowLeft') j = (i-1+tabs.length)%tabs.length;
+        if(j!==i){ e.preventDefault(); activateTab(tabs[j]); }
+      })
+    })
+  </script>
+</body>
+</html>
