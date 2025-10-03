@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phân Tích ASUS ExpertCenter PN54 | Infographic</title>
+    <title>Phân Tích ASUS ExpertCenter PN54 AI PC</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,12 +20,12 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            height: 300px;
-            max-height: 400px;
+            height: 350px;
+            max-height: 450px;
         }
         @media (min-width: 768px) {
             .chart-container {
-                height: 350px;
+                height: 400px;
             }
         }
         .swot-card {
@@ -39,6 +39,17 @@
         .swot-card:hover {
             transform: translateY(-5px);
         }
+        .icon-box {
+            background-color: #E6F3F3;
+            color: #00A6A6;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body class="text-gray-800">
@@ -46,116 +57,93 @@
     <main class="container mx-auto p-4 md:p-8">
         <header class="text-center mb-12">
             <h1 class="text-4xl md:text-5xl font-black text-[#00A6A6] uppercase tracking-tight">ASUS ExpertCenter PN54</h1>
-            <p class="text-xl md:text-2xl mt-2 font-semibold text-gray-700">Phân Tích Toàn Diện Sức Mạnh & Vị Thế Trên Thị Trường Mini PC</p>
+            <p class="text-xl md:text-2xl mt-2 font-semibold text-gray-700">Phân Tích AI PC - Sức Mạnh 50 TOPS và Kết Nối Bất Bại</p>
             <p id="headerContext" class="mt-4 max-w-3xl mx-auto text-gray-600">
-                Thị trường Mini PC đang sôi động hơn bao giờ hết với sự cạnh tranh khốc liệt. ASUS ExpertCenter PN54, trang bị CPU AMD Ryzen™ 7000/8000 series mới nhất cùng AI Boost, nổi lên như một đối thủ đáng gờm. Infographic này sẽ phân tích sâu về hiệu năng, các điểm mạnh, điểm yếu của PN54 khi đặt lên bàn cân với các sản phẩm hot nhất cùng phân khúc.
+                ASUS PN54 phiên bản mới được trang bị chip **AMD Ryzen AI 300 Series** (Ryzen AI 7 350/Ryzen AI 5 340) với NPU XDNA 2 cung cấp hiệu suất lên đến **50 TOPS**. Điều này định vị PN54 là một trong những Mini PC mạnh nhất và tiên phong nhất trong kỷ nguyên AI PC, sẵn sàng cho các tác vụ tính toán thông minh phức tạp.
             </p>
         </header>
 
         <section class="mb-16">
-            <h2 class="text-3xl font-bold text-center mb-8">Đối Thủ Cạnh Tranh Chính</h2>
+            <h2 class="text-3xl font-bold text-center mb-8">Tổng Quan Cấu Hình Dẫn Đầu</h2>
             <div class="bg-white rounded-lg shadow-lg p-6 overflow-x-auto">
                 <table class="w-full text-left border-collapse" id="competitorTable">
                     <thead>
                         <tr>
-                            <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b">Model</th>
-                            <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b">CPU (Tiêu biểu)</th>
-                            <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b">iGPU</th>
-                            <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b">Cổng Nổi Bật</th>
+                            <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b">Thành Phần</th>
+                            <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b">Thông Số PN54 (Tối đa)</th>
+                            <th class="py-3 px-4 bg-gray-100 font-bold uppercase text-sm text-gray-600 border-b">Ý nghĩa</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="hover:bg-gray-50">
-                            <td class="py-3 px-4 border-b border-gray-200 font-semibold text-[#00A6A6]">ASUS PN54</td>
-                            <td class="py-3 px-4 border-b border-gray-200">Ryzen 7 7735HS / 8845HS</td>
-                            <td class="py-3 px-4 border-b border-gray-200">Radeon 680M / 780M</td>
-                            <td class="py-3 px-4 border-b border-gray-200">2x USB4, 2.5G LAN, Quad Display</td>
+                            <td class="py-3 px-4 border-b border-gray-200 font-semibold text-[#00A6A6]">Vi xử lý</td>
+                            <td class="py-3 px-4 border-b border-gray-200">AMD Ryzen AI 7 350 (cTDP 40W)</td>
+                            <td class="py-3 px-4 border-b border-gray-200">Hiệu năng CPU Zen 5 thế hệ mới, tối ưu đa nhiệm.</td>
                         </tr>
                         <tr class="hover:bg-gray-50">
-                            <td class="py-3 px-4 border-b border-gray-200 font-semibold">Intel NUC 14 Pro</td>
-                            <td class="py-3 px-4 border-b border-gray-200">Core Ultra 7 155H</td>
-                            <td class="py-3 px-4 border-b border-gray-200">Intel Arc Graphics</td>
-                            <td class="py-3 px-4 border-b border-gray-200">2x Thunderbolt 4, 2.5G LAN</td>
+                            <td class="py-3 px-4 border-b border-gray-200 font-semibold">NPU (AI Engine)</td>
+                            <td class="py-3 px-4 border-b border-gray-200 font-bold text-[#F26052]">Lên đến 50 TOPS (XDNA 2)</td>
+                            <td class="py-3 px-4 border-b border-gray-200">Sức mạnh xử lý AI tại chỗ hàng đầu thị trường.</td>
                         </tr>
                         <tr class="hover:bg-gray-50">
-                            <td class="py-3 px-4 border-b border-gray-200 font-semibold">Beelink SER7</td>
-                            <td class="py-3 px-4 border-b border-gray-200">Ryzen 7 7840HS</td>
-                            <td class="py-3 px-4 border-b border-gray-200">Radeon 780M</td>
-                            <td class="py-3 px-4 border-b border-gray-200">2x USB4, 2.5G LAN</td>
+                            <td class="py-3 px-4 border-b border-gray-200 font-semibold">Đồ họa</td>
+                            <td class="py-3 px-4 border-b border-gray-200">Radeon 860M/840M Graphics</td>
+                            <td class="py-3 px-4 border-b border-gray-200">Hiệu suất đồ họa tích hợp xuất sắc, hỗ trợ 4K.</td>
                         </tr>
                         <tr class="hover:bg-gray-50">
-                            <td class="py-3 px-4 border-b border-gray-200 font-semibold">Mac Mini M2/M3</td>
-                            <td class="py-3 px-4 border-b border-gray-200">Apple M2 / M3</td>
-                            <td class="py-3 px-4 border-b border-gray-200">Apple 10-core GPU</td>
-                            <td class="py-3 px-4 border-b border-gray-200">2/4x Thunderbolt 4, 10G LAN (opt)</td>
+                            <td class="py-3 px-4 border-b border-gray-200 font-semibold">Bộ nhớ</td>
+                            <td class="py-3 px-4 border-b border-gray-200">2x SO-DIMM DDR5-5600MHz (Max 64GB)</td>
+                            <td class="py-3 px-4 border-b border-gray-200">Tốc độ cao cho các tác vụ nặng về dữ liệu.</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="py-3 px-4 border-b border-gray-200 font-semibold">Lưu trữ</td>
+                            <td class="py-3 px-4 border-b border-gray-200">2x M.2 2280 PCIe Gen4x4 (SSD NVMe)</td>
+                            <td class="py-3 px-4 border-b border-gray-200">Tốc độ siêu nhanh, dung lượng lưu trữ kép.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
-        
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold text-center mb-2">So Sánh Hiệu Năng Đa Nhân (Cinebench R23)</h2>
-            <p id="cinebenchContext" class="text-center max-w-2xl mx-auto text-gray-600 mb-8">Cinebench R23 đo lường sức mạnh xử lý của CPU trong các tác vụ render nặng. Điểm số cao hơn thể hiện khả năng xử lý đa nhiệm và các ứng dụng chuyên nghiệp tốt hơn. Các mẫu máy từ Beelink và ASUS với CPU AMD hiệu năng cao thường dẫn đầu ở bài test này.</p>
-            <div class="bg-white rounded-lg shadow-lg p-6">
+
+        <section class="mb-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+             <div class="md:col-span-2 bg-white rounded-lg shadow-lg p-6">
+                <h2 class="text-3xl font-bold text-center mb-2">Lợi Thế AI (NPU TOPS) So Với Đối Thủ</h2>
+                <p id="npuContext" class="text-center max-w-2xl mx-auto text-gray-600 mb-8">NPU 50 TOPS của PN54 (XDNA 2) mang lại một bước nhảy vọt so với các nền tảng cũ và hiện tại. Điều này cho phép thực hiện các chức năng AI nâng cao như Copilot+ và các mô hình ngôn ngữ lớn cục bộ một cách hiệu quả và tiết kiệm năng lượng.</p>
                 <div class="chart-container h-[400px] max-h-[500px]">
-                    <canvas id="cinebenchChart"></canvas>
+                    <canvas id="npuChart"></canvas>
+                </div>
+            </div>
+            <div class="md:col-span-1 bg-white rounded-lg shadow-lg p-6 flex flex-col justify-center">
+                <h3 class="text-2xl font-bold text-gray-700 mb-4">Điểm Nhấn AI Tiên Phong</h3>
+                <div class="space-y-4">
+                    <div class="flex items-start">
+                        <div class="icon-box text-[#00A6A6]">🧠</div>
+                        <div class="ml-4">
+                            <p class="font-bold text-xl text-[#00A6A6]">50 TOPS</p>
+                            <p class="text-gray-600 text-sm">Hiệu suất NPU XDNA 2. Gấp 5 lần hiệu suất AI thế hệ trước.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="icon-box text-[#77D977]">🔑</div>
+                        <div class="ml-4">
+                            <p class="font-bold text-xl text-[#77D977]">Copilot+</p>
+                            <p class="text-gray-600 text-sm">Tương thích hoàn toàn với các tính năng Copilot+ PC mới nhất của Microsoft.</p>
+                        </div>
+                    </div>
+                     <div class="flex items-start">
+                        <div class="icon-box text-[#F29559]">⚡</div>
+                        <div class="ml-4">
+                            <p class="font-bold text-xl text-[#F29559]">CPU Zen 5</p>
+                            <p class="text-gray-600 text-sm">12 Cores tốc độ cực nhanh, đảm bảo đa nhiệm mượt mà.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="mb-16">
-            <h2 class="text-3xl font-bold text-center mb-2">So Sánh Hiệu Năng Đồ Họa Tích Hợp (3DMark Time Spy)</h2>
-            <p id="graphicsContext" class="text-center max-w-2xl mx-auto text-gray-600 mb-8">Time Spy là một bài test phổ biến để đánh giá hiệu năng đồ họa, đặc biệt quan trọng cho gaming và các công việc sáng tạo. GPU Radeon 780M trên các CPU AMD mới cho thấy sức mạnh vượt trội, biến mini PC thành một cỗ máy giải trí nhỏ gọn.</p>
-            <div class="bg-white rounded-lg shadow-lg p-6">
-                <div class="chart-container h-[400px] max-h-[500px]">
-                    <canvas id="graphicsChart"></canvas>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold text-center mb-8">Phân Tích SWOT: ASUS ExpertCenter PN54</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="swotContainer">
-                <div class="swot-card border-l-[#77D977]" data-swot-type="strength">
-                    <h3 class="text-2xl font-bold mb-3 text-[#77D977]">Điểm Mạnh (Strengths)</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700" id="strengthsList">
-                        <li>CPU AMD Ryzen mới nhất tích hợp AI Boost.</li>
-                        <li>Kết nối hàng đầu: 2x USB4, 2.5G LAN, xuất 4 màn hình.</li>
-                        <li>Thương hiệu ASUS uy tín, độ tin cậy và hỗ trợ tốt.</li>
-                        <li>Thiết kế nhỏ gọn, bền bỉ, có ngàm VESA.</li>
-                    </ul>
-                </div>
-                <div class="swot-card border-l-[#F26052]" data-swot-type="weakness">
-                    <h3 class="text-2xl font-bold mb-3 text-[#F26052]">Điểm Yếu (Weaknesses)</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700" id="weaknessesList">
-                        <li>Giá có thể cao hơn các thương hiệu từ Trung Quốc.</li>
-                        <li>Hệ thống tản nhiệt có thể không mạnh mẽ bằng các hãng tập trung vào gaming.</li>
-                        <li>Cấu hình RAM/SSD mặc định có thể không phải là tùy chọn nhanh nhất.</li>
-                    </ul>
-                </div>
-                <div class="swot-card border-l-[#00A6A6]" data-swot-type="opportunity">
-                    <h3 class="text-2xl font-bold mb-3 text-[#00A6A6]">Cơ Hội (Opportunities)</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700" id="opportunitiesList">
-                        <li>Tận dụng sức mạnh AI cho các ứng dụng doanh nghiệp và sáng tạo.</li>
-                        <li>Nhắm đến phân khúc văn phòng cao cấp, cần sự ổn định và nhỏ gọn.</li>
-                        <li>Tạo hệ sinh thái đồng bộ với các sản phẩm ASUS khác.</li>
-                    </ul>
-                </div>
-                <div class="swot-card border-l-[#F29559]" data-swot-type="threat">
-                    <h3 class="text-2xl font-bold mb-3 text-[#F29559]">Thách Thức (Threats)</h3>
-                    <ul class="list-disc list-inside space-y-2 text-gray-700" id="threatsList">
-                        <li>Cạnh tranh gay gắt về giá từ Beelink, Minisforum.</li>
-                        <li>Intel NUC có vị thế vững chắc trong khối doanh nghiệp.</li>
-                        <li>Hệ sinh thái mạnh mẽ và hiệu quả của Apple Mac Mini.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section class="mb-16">
-            <h2 class="text-3xl font-bold text-center mb-2">Đối Đầu Tính Năng Toàn Diện</h2>
-            <p id="radarContext" class="text-center max-w-2xl mx-auto text-gray-600 mb-8">Biểu đồ radar thể hiện một cách trực quan thế mạnh của từng sản phẩm trên nhiều phương diện. ASUS PN54 cho thấy sự cân bằng tuyệt vời giữa hiệu năng, kết nối và độ tin cậy, trong khi các đối thủ khác có thể mạnh hơn ở những khía cạnh riêng lẻ.</p>
+            <h2 class="text-3xl font-bold text-center mb-2">So Sánh Đối Thủ Cạnh Tranh (AI & Tổng Thể)</h2>
+            <p id="radarContext" class="text-center max-w-2xl mx-auto text-gray-600 mb-8">Biểu đồ Radar đánh giá vị thế của PN54 trên các khía cạnh quan trọng so với các đối thủ chính: Mac Mini (hệ sinh thái) và Beelink SER7 (giá trị/hiệu năng truyền thống). PN54 thể hiện sự cân bằng tuyệt vời, đặc biệt nổi trội về kết nối và năng lực AI.</p>
             <div class="bg-white rounded-lg shadow-lg p-6">
                  <div class="chart-container h-[400px] md:h-[500px] max-h-[550px]">
                     <canvas id="radarChart"></canvas>
@@ -163,13 +151,79 @@
             </div>
         </section>
 
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Kết Nối Đa Dụng & Mở Rộng</h2>
+            <p class="text-center max-w-3xl mx-auto text-gray-600 mb-8">PN54 được thiết kế để kết nối toàn diện với mọi thiết bị và hệ thống mạng, bao gồm Wi-Fi 7 và khả năng xuất đồng thời 4 màn hình 4K, lý tưởng cho Digital Signage và môi trường đa nhiệm. (Kích thước: 130mm x 130mm x 34mm).</p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+                <div class="p-4 bg-white rounded-lg shadow-md border-t-4 border-[#00A6A6]">
+                    <p class="text-4xl">🔗</p>
+                    <p class="font-bold mt-2">Dual 2.5G LAN</p>
+                    <p class="text-sm text-gray-600">Tốc độ mạng ổn định và cực nhanh, phù hợp cho Edge Computing.</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-md border-t-4 border-[#77D977]">
+                    <p class="text-4xl">📶</p>
+                    <p class="font-bold mt-2">Wi-Fi 7 / BT 5.4</p>
+                    <p class="text-sm text-gray-600">Kết nối không dây thế hệ mới nhất, giảm độ trễ tối đa.</p>
+                </div>
+                <div class="p-4 bg-white rounded-lg shadow-md border-t-4 border-[#F29559]">
+                    <p class="text-4xl">🔌</p>
+                    <p class="font-bold mt-2">6 Cổng USB</p>
+                    <p class="text-sm text-gray-600">Bao gồm 1x USB4 Type-C (40Gbps) hỗ trợ DisplayPort 2.1 và PD-in 100W.</p>
+                </div>
+                 <div class="p-4 bg-white rounded-lg shadow-md border-t-4 border-[#F26052]">
+                    <p class="text-4xl">🖥️</p>
+                    <p class="font-bold mt-2">4K Quad Display</p>
+                    <p class="text-sm text-gray-600">Hỗ trợ 4 màn hình 4K cùng lúc (qua 1x HDMI, 2x DP, 1x USB4 DP).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-16">
+            <h2 class="text-3xl font-bold text-center mb-8">Phân Tích SWOT Chiến Lược</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="swotContainer">
+                <div class="swot-card border-l-[#77D977]">
+                    <h3 class="text-2xl font-bold mb-3 text-[#77D977]">Điểm Mạnh (Strengths)</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>**Năng lực AI:** 50 TOPS NPU dẫn đầu, mở khóa Copilot+ PC.</li>
+                        <li>**Hiệu năng tổng thể:** CPU Zen 5 và iGPU Radeon 800M mạnh mẽ.</li>
+                        <li>**Kết nối:** Wi-Fi 7 và Dual 2.5G LAN, USB4 (40Gbps).</li>
+                        <li>**Thương hiệu & Độ tin cậy:** Bảo hành 24/7, thương hiệu ASUS cho doanh nghiệp.</li>
+                    </ul>
+                </div>
+                <div class="swot-card border-l-[#F26052]">
+                    <h3 class="text-2xl font-bold mb-3 text-[#F26052]">Điểm Yếu (Weaknesses)</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Giá thành: Chi phí đầu tư ban đầu cao hơn các Mini PC không AI khác.</li>
+                        <li>Phần mềm NPU: Cần thời gian để các ứng dụng AI được tối ưu hóa rộng rãi.</li>
+                        <li>Tản nhiệt: Thách thức trong việc duy trì hiệu năng tối đa (40W cTDP) trong thiết kế 0.6L.</li>
+                    </ul>
+                </div>
+                <div class="swot-card border-l-[#00A6A6]">
+                    <h3 class="text-2xl font-bold mb-3 text-[#00A6A6]">Cơ Hội (Opportunities)</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>**Thị trường AI PC:** Vị thế tiên phong, thu hút nhóm khách hàng Early Adopters và doanh nghiệp.</li>
+                        <li>**Ứng dụng Chuyên biệt:** Nhắm vào Edge Computing, Smart Healthcare/Manufacturing, và các giải pháp Kiosk/POS đòi hỏi AI.</li>
+                        <li>**Bán chéo:** Tận dụng hệ sinh thái ASUS ExpertCenter.</li>
+                    </ul>
+                </div>
+                <div class="swot-card border-l-[#F29559]">
+                    <h3 class="text-2xl font-bold mb-3 text-[#F29559]">Thách Thức (Threats)</h3>
+                    <ul class="list-disc list-inside space-y-2 text-gray-700">
+                        <li>Cạnh tranh về giá từ các đối thủ sử dụng chip cũ hơn (như 7840HS).</li>
+                        <li>Intel Lunar Lake sắp ra mắt với NPU mạnh mẽ, có thể thu hẹp khoảng cách.</li>
+                        <li>Mac Mini M3 giữ lợi thế về hệ sinh thái và hiệu suất trên watt.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
         <footer class="text-center pt-8 border-t">
-             <h2 class="text-3xl font-bold text-center mb-4">Kết Luận</h2>
+             <h2 class="text-3xl font-bold text-center mb-4">Kết Luận Chuyên Gia</h2>
              <p class="max-w-3xl mx-auto text-gray-600">
-                ASUS ExpertCenter PN54 không phải là chiếc mini PC có hiệu năng thô cao nhất hay giá rẻ nhất, nhưng nó là một trong những lựa chọn toàn diện và đáng tin cậy nhất. Với sức mạnh từ CPU AMD mới, khả năng kết nối vượt trội và sự bảo chứng từ thương hiệu ASUS, PN54 là một lựa chọn tuyệt vời cho môi trường làm việc chuyên nghiệp, người dùng sáng tạo và những ai cần một cỗ máy nhỏ gọn nhưng mạnh mẽ và ổn định.
+                ASUS ExpertCenter PN54 (Ryzen AI 300 Series) đã nâng tầm Mini PC lên một tầm cao mới. Với sức mạnh **50 TOPS NPU** và chip **Zen 5** hiệu năng cao, PN54 không chỉ là lựa chọn tối ưu về mặt kỹ thuật mà còn là khoản đầu tư chiến lược cho tương lai của các tác vụ AI. Sản phẩm này phù hợp lý tưởng cho các **doanh nghiệp startup** và **văn phòng cao cấp** cần hiệu suất vượt trội, sự ổn định 24/7 và sẵn sàng cho công nghệ AI thế hệ mới nhất.
              </p>
              <div class="mt-8 text-sm text-gray-500">
-                <p>Market Research thực hiện bởi Hoàng Bảo.</p>
+                <p>Infographic này dựa trên Datasheet công bố chính thức của ASUS và ước tính hiệu năng thị trường.</p>
              </div>
         </footer>
     </main>
@@ -177,20 +231,18 @@
     <script>
         const wrapLabel = (label) => {
             const maxLength = 16;
-            if (label.length <= maxLength) {
-                return label;
-            }
+            if (label.length <= maxLength) return label;
             const words = label.split(' ');
             const lines = [];
             let currentLine = '';
             for (const word of words) {
-                if ((currentLine + word).length > maxLength) {
+                if ((currentLine + word).length > maxLength && currentLine.length > 0) {
                     lines.push(currentLine.trim());
                     currentLine = '';
                 }
                 currentLine += word + ' ';
             }
-            lines.push(currentLine.trim());
+            if (currentLine.trim()) lines.push(currentLine.trim());
             return lines;
         };
 
@@ -201,10 +253,7 @@
                         title: function(tooltipItems) {
                             const item = tooltipItems[0];
                             let label = item.chart.data.labels[item.dataIndex];
-                            if (Array.isArray(label)) {
-                                return label.join(' ');
-                            }
-                            return label;
+                            return Array.isArray(label) ? label.join(' ') : label;
                         }
                     }
                 }
@@ -216,150 +265,97 @@
             green: '#77D977',
             yellow: '#F2E307',
             orange: '#F29559',
-            red: '#F26052',
-            background: 'rgba(0, 166, 166, 0.2)',
-            border: '#00A6A6'
+            red: '#F26052'
         };
 
-        const cinebenchData = {
-            labels: ['Beelink SER7', 'ASUS PN54', 'Intel NUC 14 Pro', 'Mac Mini M2'].map(wrapLabel),
+        // Chart 1: NPU Performance Comparison (Bar Chart)
+        const npuData = {
+            labels: [
+                'ASUS PN54 (Ryzen AI 300)', 
+                'Intel NUC (Lunar Lake Ư.Tính)', 
+                'Mac Mini M3', 
+                'Intel NUC 14 Pro (Cũ)'
+            ].map(wrapLabel),
             datasets: [{
-                label: 'Điểm Cinebench R23 (Đa nhân)',
-                data: [15200, 14500, 13800, 9500],
+                label: 'Hiệu suất NPU (TOPS)',
+                data: [50, 45, 18, 10],
                 backgroundColor: [
-                    energeticPalette.blue,
-                    energeticPalette.green,
-                    energeticPalette.orange,
-                    energeticPalette.red,
+                    energeticPalette.blue, 
+                    energeticPalette.green, 
+                    energeticPalette.orange, 
+                    '#CCCCCC' 
                 ],
                 borderColor: [
-                    energeticPalette.blue,
-                    energeticPalette.green,
-                    energeticPalette.orange,
-                    energeticPalette.red,
+                    energeticPalette.blue, 
+                    energeticPalette.green, 
+                    energeticPalette.orange, 
+                    '#AAAAAA'
                 ],
                 borderWidth: 1
             }]
         };
 
-        const cinebenchCtx = document.getElementById('cinebenchChart').getContext('2d');
-        new Chart(cinebenchCtx, {
+        const npuCtx = document.getElementById('npuChart').getContext('2d');
+        new Chart(npuCtx, {
             type: 'bar',
-            data: cinebenchData,
+            data: npuData,
             options: {
                 ...tooltipTitleCallback,
                 maintainAspectRatio: false,
-                indexAxis: 'y',
                 scales: {
-                    x: {
-                        beginAtZero: true,
-                         grid: {
-                            color: '#e5e7eb'
-                        }
+                    y: { 
+                        beginAtZero: true, 
+                        grid: { color: '#e5e7eb' },
+                        title: { display: true, text: 'TOPS' }
                     },
-                    y: {
-                        grid: {
-                            display: false
-                        }
-                    }
+                    x: { grid: { display: false } }
                 },
                 plugins: {
                     ...tooltipTitleCallback.plugins,
-                    legend: {
-                        display: false
-                    }
+                    legend: { display: false },
+                    title: { display: true, text: 'Hiệu suất NPU (TOPS)' }
                 }
             }
         });
-        
-        const graphicsData = {
-            labels: ['Beelink SER7 (780M)', 'ASUS PN54 (780M)', 'Intel NUC 14 (Arc)', 'Mac Mini M2 (10-core)'].map(wrapLabel),
-            datasets: [{
-                label: 'Điểm 3DMark Time Spy Graphics',
-                data: [3100, 3050, 2600, 2400],
-                backgroundColor: [
-                    energeticPalette.blue,
-                    energeticPalette.green,
-                    energeticPalette.orange,
-                    energeticPalette.red,
-                ],
-                 borderColor: [
-                    energeticPalette.blue,
-                    energeticPalette.green,
-                    energeticPalette.orange,
-                    energeticPalette.red,
-                ],
-                borderWidth: 1
-            }]
-        };
 
-        const graphicsCtx = document.getElementById('graphicsChart').getContext('2d');
-        new Chart(graphicsCtx, {
-            type: 'bar',
-            data: graphicsData,
-            options: {
-                 ...tooltipTitleCallback,
-                maintainAspectRatio: false,
-                indexAxis: 'y',
-                scales: {
-                    x: {
-                        beginAtZero: true,
-                        grid: {
-                            color: '#e5e7eb'
-                        }
-                    },
-                    y: {
-                        grid: {
-                            display: false
-                        }
-                    }
-                },
-                plugins: {
-                    ...tooltipTitleCallback.plugins,
-                    legend: {
-                        display: false
-                    }
-                }
-            }
-        });
-        
+        // Chart 2: Comprehensive Radar Comparison
         const radarData = {
-          labels: ['Hiệu năng', 'Kết nối', 'Nâng cấp', 'Giá trị/Hiệu năng', 'Hệ sinh thái'],
-          datasets: [
-            {
-              label: 'ASUS PN54',
-              data: [8, 10, 8, 7, 7],
-              fill: true,
-              backgroundColor: 'rgba(0, 166, 166, 0.2)',
-              borderColor: '#00A6A6',
-              pointBackgroundColor: '#00A6A6',
-              pointBorderColor: '#fff',
-              pointHoverBackgroundColor: '#fff',
-              pointHoverBorderColor: '#00A6A6'
-            },
-            {
-              label: 'Beelink SER7',
-              data: [9, 8, 8, 10, 5],
-              fill: true,
-              backgroundColor: 'rgba(242, 96, 82, 0.2)',
-              borderColor: '#F26052',
-              pointBackgroundColor: '#F26052',
-              pointBorderColor: '#fff',
-              pointHoverBackgroundColor: '#fff',
-              pointHoverBorderColor: '#F26052'
-            },
-            {
-                label: 'Mac Mini M2',
-                data: [8, 7, 3, 6, 10],
-                fill: true,
-                backgroundColor: 'rgba(119, 217, 119, 0.2)',
-                borderColor: '#77D977',
-                pointBackgroundColor: '#77D977',
-                pointBorderColor: '#fff',
-                pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: '#77D977'
-            }
-          ]
+            labels: ['Năng lực AI', 'Hiệu năng CPU/iGPU', 'Khả năng Nâng cấp', 'Kết nối I/O', 'Hệ sinh thái/Thương hiệu', 'Giá trị/Chi phí'],
+            datasets: [
+                {
+                    label: 'ASUS PN54 (Ryzen AI 300)',
+                    data: [10, 9, 8, 10, 8, 7], // 10 là 50 TOPS; 10 là kết nối USB4/2.5G LAN/Wi-Fi 7
+                    fill: true,
+                    backgroundColor: 'rgba(0, 166, 166, 0.2)',
+                    borderColor: energeticPalette.blue,
+                    pointBackgroundColor: energeticPalette.blue,
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: energeticPalette.blue
+                },
+                {
+                    label: 'Mac Mini M3',
+                    data: [6, 9, 4, 7, 10, 6], // 6 là 18 TOPS; 10 là hệ sinh thái Apple
+                    fill: true,
+                    backgroundColor: 'rgba(119, 217, 119, 0.2)',
+                    borderColor: energeticPalette.green,
+                    pointBackgroundColor: energeticPalette.green,
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: energeticPalette.green
+                },
+                {
+                    label: 'Mini PC Khác (VD: Beelink)',
+                    data: [3, 7, 9, 7, 5, 10], // 3 là NPU cũ 10 TOPS; 10 là giá trị tốt nhất
+                    fill: true,
+                    backgroundColor: 'rgba(242, 153, 89, 0.2)',
+                    borderColor: energeticPalette.orange,
+                    pointBackgroundColor: energeticPalette.orange,
+                    pointBorderColor: '#fff',
+                    pointHoverBackgroundColor: '#fff',
+                    pointHoverBorderColor: energeticPalette.orange
+                }
+            ]
         };
 
         const radarCtx = document.getElementById('radarChart').getContext('2d');
@@ -370,31 +366,26 @@
                 ...tooltipTitleCallback,
                 maintainAspectRatio: false,
                 elements: {
-                  line: {
-                    borderWidth: 3
-                  }
+                    line: { borderWidth: 3 }
                 },
                 scales: {
                     r: {
-                        angleLines: {
-                            color: '#e5e7eb'
-                        },
-                        grid: {
-                            color: '#e5e7eb'
-                        },
+                        angleLines: { color: '#e5e7eb' },
+                        grid: { color: '#e5e7eb' },
                         pointLabels: {
-                            font: {
-                                size: 14,
-                                weight: 'bold'
-                            }
+                            font: { size: 12, weight: 'bold' }
                         },
                         ticks: {
                            backdropColor: '#F8F9FA',
-                           stepSize: 2
+                           stepSize: 2,
+                           max: 10
                         },
                         suggestedMin: 0,
                         suggestedMax: 10
                     }
+                },
+                plugins: {
+                    legend: { position: 'bottom' }
                 }
             }
         });
