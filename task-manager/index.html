@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="./app.js"></script>
+</head>
+<body class="bg-slate-100 font-[Inter]">
+    <main class="min-h-screen flex">
+        <aside class="w-64 bg-white shadow-lg p-6 space-y-6 hidden lg:block">
+            <h1 class="text-2xl font-bold text-slate-800">Projects</h1>
+            <nav class="space-y-4">
+                <button class="w-full text-left px-4 py-2 rounded-lg bg-slate-100 text-slate-700 font-semibold">Project Alpha</button>
+                <button class="w-full text-left px-4 py-2 rounded-lg hover:bg-slate-100 text-slate-600">Project Beta</button>
+                <button class="w-full text-left px-4 py-2 rounded-lg hover:bg-slate-100 text-slate-600">Project Gamma</button>
+            </nav>
+            <div class="pt-6 border-t border-slate-200">
+                <button class="w-full flex items-center justify-center px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition">+ New Project</button>
+            </div>
+        </aside>
+
+        <section class="flex-1 flex flex-col p-6 gap-6">
+            <header class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+                <div>
+                    <h2 class="text-3xl font-bold text-slate-900">Task Board</h2>
+                    <p class="text-slate-500">Quản lý công việc theo dự án và trạng thái.</p>
+                </div>
+                <div class="flex flex-wrap items-center gap-3">
+                    <form id="filter-form" class="flex items-center gap-2">
+                        <label for="status-filter" class="text-sm font-medium text-slate-600">Filter:</label>
+                        <select id="status-filter" class="border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option value="all">Tất cả</option>
+                            <option value="todo">Cần làm</option>
+                            <option value="in-progress">Đang làm</option>
+                            <option value="done">Hoàn thành</option>
+                        </select>
+                    </form>
+                    <button id="new-task-btn" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500 transition">
+                        <span class="text-lg">＋</span>
+                        <span>Thêm Task</span>
+                    </button>
+                </div>
+            </header>
+
+            <section id="new-task-form" class="bg-white shadow-md rounded-xl p-6 space-y-4">
+                <h3 class="text-xl font-semibold text-slate-800">Tạo Task Mới</h3>
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="col-span-1 md:col-span-2">
+                        <label class="block text-sm font-medium text-slate-600 mb-1" for="task-title">Tiêu đề</label>
+                        <input id="task-title" type="text" placeholder="Ví dụ: Thiết kế wireframe" class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1" for="task-assignee">Người phụ trách</label>
+                        <input id="task-assignee" type="text" placeholder="Tên thành viên" class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1" for="task-status">Trạng thái</label>
+                        <select id="task-status" class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                            <option value="todo">Cần làm</option>
+                            <option value="in-progress">Đang làm</option>
+                            <option value="done">Hoàn thành</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-slate-600 mb-1" for="task-due">Hạn hoàn thành</label>
+                        <input id="task-due" type="date" class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <div class="col-span-1 md:col-span-2">
+                        <label class="block text-sm font-medium text-slate-600 mb-1" for="task-notes">Ghi chú</label>
+                        <textarea id="task-notes" rows="3" placeholder="Thông tin mô tả chi tiết" class="w-full border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                    </div>
+                    <div class="col-span-1 md:col-span-2 flex justify-end gap-3">
+                        <button type="reset" class="px-4 py-2 rounded-lg border border-slate-300 text-slate-600 hover:bg-slate-100">Xoá</button>
+                        <button type="submit" class="px-4 py-2 rounded-lg bg-indigo-600 text-white font-semibold hover:bg-indigo-500">Lưu Task</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class="bg-white rounded-xl shadow-md p-6 space-y-4">
+                    <header class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-slate-800">Cần làm</h3>
+                        <span class="text-sm text-slate-500">0 task</span>
+                    </header>
+                    <div class="space-y-3" data-column="todo">
+                        <p class="text-sm text-slate-400">Chưa có task nào. Thêm task mới để bắt đầu.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md p-6 space-y-4">
+                    <header class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-slate-800">Đang làm</h3>
+                        <span class="text-sm text-slate-500">0 task</span>
+                    </header>
+                    <div class="space-y-3" data-column="in-progress">
+                        <p class="text-sm text-slate-400">Chưa có task nào. Theo dõi tiến độ tại đây.</p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-md p-6 space-y-4">
+                    <header class="flex items-center justify-between">
+                        <h3 class="text-lg font-semibold text-slate-800">Hoàn thành</h3>
+                        <span class="text-sm text-slate-500">0 task</span>
+                    </header>
+                    <div class="space-y-3" data-column="done">
+                        <p class="text-sm text-slate-400">Chưa có task nào. Lưu trữ các task đã hoàn thành.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
